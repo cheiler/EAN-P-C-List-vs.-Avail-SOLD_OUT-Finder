@@ -24,6 +24,4 @@ function show($param){
     echo $value;
 }
 
-
-
 ?>
