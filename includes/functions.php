@@ -56,6 +56,11 @@ function apiWrapper($url, $xml, $method="GET"){
 }
 
 
+function generateSig($apiKey, $secret){
+    $timestamp = gmdate('U'); // 1200603038  (Thu, 17 Jan 2008 20:50:38 +0000)   
+    $sig = md5($apiKey . $secret . $timestamp);
+    return $sig;
+}
 
 
 ?>
