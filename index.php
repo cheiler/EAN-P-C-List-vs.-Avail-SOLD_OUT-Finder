@@ -44,7 +44,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<departureDate>09/03/2015</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
-    $xml .= "<numberOfResults>1</numberOfResults>";
+    $xml .= "<numberOfResults>50</numberOfResults>";
     $xml .= "</HotelListRequest>";
 
 
@@ -58,9 +58,11 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     fwrite($file, ($xml)."\r\n");
     
     fwrite($file, "LIST response:\r\n");
-    fwrite($file, print_r($listResponse, false)."\r\n");
+    fwrite($file, print_r($listResponse, true)."\r\n");
     
 
+    
+    
 //TODO: Consecutive AVAIL requests for each Hotel and Room
 
 //TODO: Calculate Results and Display in Table
