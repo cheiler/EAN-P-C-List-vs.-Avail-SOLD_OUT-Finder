@@ -8,20 +8,23 @@
 */
 
 //HTML Header
-include("assets/header.xhtml");
-include("includes/functions.php");
+echo "hello";
+include_once("assets/header.xhtml");
+require_once("includes/functions.php");
 
+?>
 //BODY
-
-
-
-//PHP Scripting
-
-
-
+<body>
+<?php
+include_once("assets/form.xhtml");
 
 
 
 
+?>
 
+    
+    
+</body>
+</html>
 ?>
