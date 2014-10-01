@@ -24,4 +24,15 @@ function show($param){
     echo $value;
 }
 
+function getFilename(){
+    $temp = getValue('log');
+    if($temp===""){
+        $temp = "log";
+    }
+    if((strlen($temp)<5) || (strtolower(substr($temp, -4)) = ".txt")){
+        $temp += ".txt";
+    }
+    return $temp;
+}
+
 ?>

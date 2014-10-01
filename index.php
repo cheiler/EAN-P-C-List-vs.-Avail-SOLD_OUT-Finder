@@ -18,6 +18,10 @@ include_once("assets/header.xhtml");
 include_once("assets/form.xhtml");
 
 //TODO: Open Logfile.
+$filename = getFilename();
+
+$file = fopen("\logs\$filename", "w");
+fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date());
 
 //TODO: LIST Request
 
