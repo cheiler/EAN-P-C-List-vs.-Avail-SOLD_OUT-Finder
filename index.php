@@ -111,7 +111,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     
 
 //Calls per Hotel ID in list response element:
-
+$i=0;
 foreach($listResult as $entry){
     fwrite($file, "Avail Request for Hotel ID: ".$entry['hotelId']."\r\n");
     $xml2 = str_replace("[+hotelid+]", $entry['hotelId'], $xml);
@@ -122,11 +122,25 @@ foreach($listResult as $entry){
     
     fwrite($file, "AVAIL response for Hotel ID: ".$entry['hotelId']."\r\n");
     fwrite($file, print_r($availResponse, true)."\r\n");
+    $hotelId = $availResponse->hotelId;
+    $availResult[$i]['hotelId']=$hotelId;
     
+    $j=0;
+    $rateArray = $availResponse;
     
+    print_r($rateArray);
+    
+    foreach($rateArray as $rate){
+         
+        $availResult[$i]['rooms'][$j]['rateCode'] = $rate->rateCode;
+        $availResult[$i]['rooms'][$j]['roomTypeCode'] = $rate->roomTypeCode;
+        $availResult[$i]['rooms'][$j]['price'] = $room->RateInfos->RateInfo->ChargeableRateInfo['total'];
+        
+    }
+    $i++;
     
 }
-    
+    fwrite($file, print_r($availResult, true)."\r\n");
     
     
     
