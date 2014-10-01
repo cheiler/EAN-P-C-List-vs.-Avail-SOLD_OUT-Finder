@@ -17,7 +17,13 @@ include_once("assets/header.xhtml");
 <?php
 include_once("assets/form.xhtml");
 
+//TODO: Open Logfile.
 
+//TODO: LIST Request
+
+//TODO: Consecutive AVAIL requests for each Hotel and Room
+
+//TODO: Calculate Results and Display in Table
 
 
 ?>   
