@@ -17,13 +17,17 @@ include_once("assets/header.xhtml");
 <?php
 include_once("assets/form.xhtml");
 
-//TODO: Open Logfile.
+echo "For IP Access, enable IP: ".$_SERVER['SERVER_ADDR'];
+
+//Open Logfile.
 $filename = getFilename();
 
-$file = fopen("\logs\$filename", "w");
-fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date());
+$file = fopen("logs/".$filename, "w");
+fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
 
 //TODO: LIST Request
+
+//getList Results
 
 //TODO: Consecutive AVAIL requests for each Hotel and Room
 

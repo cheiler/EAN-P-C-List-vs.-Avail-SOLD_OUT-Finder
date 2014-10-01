@@ -10,6 +10,8 @@
  * @param: $param: string
  * @returns: GET parameter 'param'
  */
+date_default_timezone_set("GMT");
+
 function getValue($param){
     $back = "";
     if(isset($_GET[$param])){
@@ -26,13 +28,34 @@ function show($param){
 
 function getFilename(){
     $temp = getValue('log');
-    if($temp===""){
+    if($temp==""){
         $temp = "log";
     }
-    if((strlen($temp)<5) || (strtolower(substr($temp, -4)) = ".txt")){
-        $temp += ".txt";
+    if((strlen($temp)<5) || (strtolower(substr($temp, -4)) != ".txt")){
+        $temp = $temp.".txt";
     }
     return $temp;
 }
+
+
+
+function apiWrapper($url, $xml, $method="GET"){
+    
+    $header[] = "Accept: application/xml";
+    $ch = curl_init();
+    curl_setopt( $ch, CURLOPT_HTTPHEADER, $header );
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
+    //curl_setopt($ch,CURLOPT_POST,5);
+    //curl_setopt($ch,CURLOPT_POSTFIELDS,$XML);
+    curl_setopt( $ch, CURLOPT_URL, $url.$XML );
+    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+    $response = curl_exec($ch);
+    $response = simplexml_load_string($response);   
+    
+    return $response;
+}
+
+
+
 
 ?>
