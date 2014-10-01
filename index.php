@@ -5,12 +5,11 @@
  * @version: 0.1
  * 
  * 
- */
+*/
 
 //HTML Header
-
-
-
+include("assets/header.xhtml");
+include("includes/functions.php");
 
 //BODY
 
