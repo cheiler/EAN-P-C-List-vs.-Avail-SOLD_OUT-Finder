@@ -8,12 +8,10 @@
 */
 
 //HTML Header
-echo "hello";
 include_once("assets/header.xhtml");
 require_once("includes/functions.php");
-
 ?>
-//BODY
+
 <body>
 <?php
 include_once("assets/form.xhtml");
@@ -21,10 +19,6 @@ include_once("assets/form.xhtml");
 
 
 
-?>
-
-    
-    
+?>   
 </body>
 </html>
-?>
