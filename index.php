@@ -44,7 +44,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<departureDate>09/03/2015</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
-    $xml .= "<numberOfResults>10</numberOfResults>";
+    $xml .= "<numberOfResults>2</numberOfResults>";
     $xml .= "<maxRatePlanCount>2</maxRatePlanCount>";
     $xml .= "<includeDetails>true</includeDetails>";
     $xml .= "</HotelListRequest>";
@@ -114,14 +114,16 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
 
 foreach($listResult as $entry){
     fwrite($file, "Avail Request for Hotel ID: ".$entry['hotelId']."\r\n");
-    $xml = str_replace("[+hotelid+]", $entry['hotelId'], $xml);
+    $xml2 = str_replace("[+hotelid+]", $entry['hotelId'], $xml);
     fwrite($file, ($url)."\r\n");
-    fwrite($file, ($xml)."\r\n");
+    fwrite($file, ($xml2)."\r\n");
     
-    $availResponse = apiWrapper($url, $xml);
+    $availResponse = apiWrapper($url, $xml2);
     
     fwrite($file, "AVAIL response for Hotel ID: ".$entry['hotelId']."\r\n");
     fwrite($file, print_r($availResponse, true)."\r\n");
+    
+    
     
 }
     
