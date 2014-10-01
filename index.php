@@ -23,7 +23,7 @@ echo "For IP Access, enable IP: ".$_SERVER['SERVER_ADDR'];
 $filename = getFilename();
 
 $file = fopen("logs/".$filename, "w");
-fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
+fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
 
 //TODO: LIST Request (partial complete)
 
@@ -31,7 +31,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
     $url="http://api.ean.com/ean-services/rs/hotel/v3/list?";
     $url .= "cid=".getValue('cid'); 
     $url .= "&apiKey=".getValue('apikey');
-    $url .= "&sig=".generateSig;
+    $url .= "&sig=".generateSig(getValue('apikey'), getValue('shared'));
     $url .= "&minorRev=26&type=xml";
     $url .= "&locale=".getValue('locale'); 
     $url .= "&currencyCode=".getValue('currency');
@@ -47,9 +47,19 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
     $xml .= "<numberOfResults>1</numberOfResults>";
     $xml .= "</HotelListRequest>";
 
-    
+
     
 //getList Results
+    
+    $listResponse = apiWrapper($url, $xml);
+    
+    fwrite($file, "LIST request:\r\n");
+    fwrite($file, ($url)."\r\n");
+    fwrite($file, ($xml)."\r\n");
+    
+    fwrite($file, "LIST response:\r\n");
+    fwrite($file, print_r($listResponse, false)."\r\n");
+    
 
 //TODO: Consecutive AVAIL requests for each Hotel and Room
 

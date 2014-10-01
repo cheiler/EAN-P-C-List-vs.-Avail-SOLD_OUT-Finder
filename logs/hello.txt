@@ -1,2 +1,6 @@
 LOGFILE LIST vs. AVAIL 
-Time: 2014-10-01-1111-1010-5656
+Time: 2014-10-01-13-23-42LIST request:
+http://api.ean.com/ean-services/rs/hotel/v3/list?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=b54218088ea0076544dc7cbeea52b2d5&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+<HotelListRequest><destinationId>9B0681E3-6D9F-47E8-8E14-5389F83569DD</destinationId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>1</numberOfResults></HotelListRequest>
+LIST response:
+

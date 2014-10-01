@@ -50,6 +50,7 @@ function apiWrapper($url, $xml, $method="GET"){
     curl_setopt( $ch, CURLOPT_URL, $url."&xml=".$xml );
     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
     $response = curl_exec($ch);
+    
     $response = simplexml_load_string($response);   
     
     return $response;
@@ -57,7 +58,10 @@ function apiWrapper($url, $xml, $method="GET"){
 
 
 function generateSig($apiKey, $secret){
-    $timestamp = gmdate('U'); // 1200603038  (Thu, 17 Jan 2008 20:50:38 +0000)   
+    $timestamp = gmdate('U'); // 1200603038  (Thu, 17 Jan 2008 20:50:38 +0000)
+    //echo "<br>Timestamp: ".$timestamp;
+    //echo "<br>API Key: ".$apiKey;
+    //echo "<br>Secret: ".$secret;
     $sig = md5($apiKey . $secret . $timestamp);
     return $sig;
 }
