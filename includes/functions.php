@@ -47,7 +47,7 @@ function apiWrapper($url, $xml, $method="GET"){
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
     //curl_setopt($ch,CURLOPT_POST,5);
     //curl_setopt($ch,CURLOPT_POSTFIELDS,$XML);
-    curl_setopt( $ch, CURLOPT_URL, $url.$XML );
+    curl_setopt( $ch, CURLOPT_URL, $url."&xml=".$xml );
     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
     $response = curl_exec($ch);
     $response = simplexml_load_string($response);   

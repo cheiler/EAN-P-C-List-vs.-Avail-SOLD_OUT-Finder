@@ -25,9 +25,9 @@ $filename = getFilename();
 $file = fopen("logs/".$filename, "w");
 fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
 
-//TODO: LIST Request
+//TODO: LIST Request (partial complete)
 
-//Create List Request:
+//Create List Request URL:
     $url="http://api.ean.com/ean-services/rs/hotel/v3/list?";
     $url .= "cid=".getValue('cid'); 
     $url .= "&apiKey=".getValue('apikey');
@@ -36,7 +36,19 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
     $url .= "&locale=".getValue('locale'); 
     $url .= "&currencyCode=".getValue('currency');
 
+//Create LIST Request XML:
+    
+    $xml = "<HotelListRequest>";
+    $xml .= "<destinationId>".getValue("destination")."</destinationId>";
+    $xml .= "<arrivalDate>09/01/2015</arrivalDate>";
+    $xml .= "<departureDate>09/03/2015</departureDate>";
+    $xml .= "<RoomGroup>";
+    $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
+    $xml .= "<numberOfResults>1</numberOfResults>";
+    $xml .= "</HotelListRequest>";
 
+    
+    
 //getList Results
 
 //TODO: Consecutive AVAIL requests for each Hotel and Room
