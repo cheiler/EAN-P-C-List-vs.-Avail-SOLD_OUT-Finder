@@ -8,8 +8,9 @@
 */
 
 //HTML Header
-include_once("assets/header.xhtml");
 require_once("includes/functions.php");
+include_once("assets/header.xhtml");
+
 ?>
 
 <body>
