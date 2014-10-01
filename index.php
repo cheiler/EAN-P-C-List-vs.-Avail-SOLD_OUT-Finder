@@ -90,6 +90,41 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     
 //TODO: Consecutive AVAIL requests for each Hotel and Room
 
+//Create AVAIL Request URL:
+    $url="http://api.ean.com/ean-services/rs/hotel/v3/avail?";
+    $url .= "cid=".getValue('cid'); 
+    $url .= "&apiKey=".getValue('apikey');
+    $url .= "&sig=".generateSig(getValue('apikey'), getValue('shared'));
+    $url .= "&minorRev=26&type=xml";
+    $url .= "&locale=".getValue('locale'); 
+    $url .= "&currencyCode=".getValue('currency');    
+    
+    $xml = "<HotelRoomAvailabilityRequest>";
+    $xml .="<hotelId>[+hotelid+]</hotelId>";
+    $xml .= "<arrivalDate>09/01/2015</arrivalDate>";
+    $xml .= "<departureDate>09/03/2015</departureDate>";
+    $xml .= "<RoomGroup>";
+    $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
+    $xml .= "<numberOfResults>10</numberOfResults>";
+    $xml .= "<maxRatePlanCount>2</maxRatePlanCount>";
+    $xml .= "</HotelRoomAvailabilityRequest>";
+    
+
+//Calls per Hotel ID in list response element:
+
+foreach($listResult as $entry){
+    fwrite($file, "Avail Request for Hotel ID: ".$entry['hotelId']."\r\n");
+    $xml = str_replace("[+hotelid+]", $entry['hotelId'], $xml);
+    fwrite($file, ($url)."\r\n");
+    fwrite($file, ($xml)."\r\n");
+    
+    $availResponse = apiWrapper($url, $xml);
+    
+    fwrite($file, "AVAIL response for Hotel ID: ".$entry['hotelId']."\r\n");
+    fwrite($file, print_r($availResponse, true)."\r\n");
+    
+}
+    
     
     
     
