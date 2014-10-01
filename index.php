@@ -30,8 +30,11 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s"));
 //Create List Request:
     $url="http://api.ean.com/ean-services/rs/hotel/v3/list?";
     $url .= "cid=".getValue('cid'); 
-    $url .= "&apiKey=".getValue('apikey'); 
-    $url .= "&minorRev=26&type=xml&locale=en_US&currencyCode=EUR";
+    $url .= "&apiKey=".getValue('apikey');
+    $url .= "&sig=".generateSig;
+    $url .= "&minorRev=26&type=xml";
+    $url .= "&locale=".getValue('locale'); 
+    $url .= "&currencyCode=".getValue('currency');
 
 
 //getList Results
