@@ -44,8 +44,8 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<departureDate>09/03/2015</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
-    $xml .= "<numberOfResults>3</numberOfResults>";
-    $xml .= "<maxRatePlanCount>2</maxRatePlanCount>";
+    $xml .= "<numberOfResults>100</numberOfResults>";
+    $xml .= "<maxRatePlanCount>10</maxRatePlanCount>";
     $xml .= "<includeDetails>true</includeDetails>";
     $xml .= "</HotelListRequest>";
 
@@ -154,14 +154,14 @@ foreach($listResult as $list){
     foreach($list['rooms'] as $room){
        echo "<tr>";
        echo "<td>".$list['hotelId']."</td>";
-       echo "<td>".$room['rateCode']."</td>";
        echo "<td>".$room['roomTypeCode']."</td>"; 
+       echo "<td>".$room['rateCode']."</td>";
        echo "<td>".$room['price']."</td>";
        echo "<td>||</td>";
        echo "<td>".findHotelId($list['hotelId'], $availResult)."</td>";
-       echo "<td>".$space."</td>";
-       echo "<td>".$space."</td>"; 
-       echo "<td>".$space."</td>";
+       echo "<td>".findRoomTypeCode($room['roomTypeCode'], $list['hotelId'], $availResult)."</td>";
+       echo "<td>".findRateCode($room['rateCode'], $list['hotelId'], $room['roomTypeCode'], $availResult)."</td>"; 
+       echo "<td>".findPrice($room['rateCode'], $list['hotelId'], $room['roomTypeCode'],$room['rateCode'], $availResult)."</td>";
        
        
        echo "</tr>\r\n"; 
