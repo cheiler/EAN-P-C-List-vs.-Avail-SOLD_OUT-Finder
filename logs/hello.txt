@@ -1,16 +1,16 @@
 LOGFILE LIST vs. AVAIL 
-Time: 2014-10-02-11-45-59
+Time: 2014-10-02-12-05-33
 LIST request:
-http://api.ean.com/ean-services/rs/hotel/v3/list?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=886dec74f3b7ccea05d4cb2a8f700f1c&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
-<HotelListRequest><destinationId>9B0681E3-6D9F-47E8-8E14-5389F83569DD</destinationId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>2</numberOfResults><maxRatePlanCount>2</maxRatePlanCount><includeDetails>true</includeDetails></HotelListRequest>
+http://api.ean.com/ean-services/rs/hotel/v3/list?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=16670ab0dc3f0e6e4fb9292fd3297929&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+<HotelListRequest><destinationId>9B0681E3-6D9F-47E8-8E14-5389F83569DD</destinationId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>3</numberOfResults><maxRatePlanCount>2</maxRatePlanCount><includeDetails>true</includeDetails></HotelListRequest>
 LIST response:
 SimpleXMLElement Object
 (
-    [customerSessionId] => 0ABAAA80-8217-9D91-48D2-0ACFED691B75
+    [customerSessionId] => 0ABAAA4C-F9AC-FC91-48D2-0BEF3C590ED2
     [numberOfRoomsRequested] => 1
     [moreResultsAvailable] => true
-    [cacheKey] => -4c82179d:148d0acfed6:1f22
-    [cacheLocation] => 10.186.170.128:7300
+    [cacheKey] => -7bf9acfc:148d0bef3c5:-e8f
+    [cacheLocation] => 10.186.170.76:7300
     [cachedSupplierResponse] => SimpleXMLElement Object
         (
             [@attributes] => Array
@@ -18,10 +18,10 @@ SimpleXMLElement Object
                     [supplierCacheTolerance] => NOT_SUPPORTED
                     [cachedTime] => 0
                     [supplierRequestNum] => 1732
-                    [supplierResponseNum] => 2
-                    [supplierResponseTime] => 4576
-                    [candidatePreptime] => 35
-                    [otherOverheadTime] => 99
+                    [supplierResponseNum] => 3
+                    [supplierResponseTime] => 1326
+                    [candidatePreptime] => 37
+                    [otherOverheadTime] => 84
                     [tpidUsed] => 5180
                     [matchedCurrency] => true
                     [matchedLocale] => true
@@ -33,7 +33,7 @@ SimpleXMLElement Object
         (
             [@attributes] => Array
                 (
-                    [size] => 2
+                    [size] => 3
                     [activePropertyCount] => 2075
                 )
 
@@ -111,7 +111,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => e3647d45-ddcb-4dc8-8131-b6ea03cf41b0
+                                                                                    [rateKey] => 89b88bec-b098-49dc-b683-7ce322953d15
                                                                                 )
 
                                                                         )
@@ -276,7 +276,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => b5bdbc84-b154-44f2-82ec-5889b60b98bb
+                                                                                    [rateKey] => 57f27b91-5fa8-45fa-947b-a6a452343610
                                                                                 )
 
                                                                         )
@@ -486,7 +486,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => cd04648d-c018-4780-af70-3f2834582c34
+                                                                                    [rateKey] => bb70a260-44f7-4624-ae73-be8a3dccc8a5
                                                                                 )
 
                                                                         )
@@ -653,7 +653,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => 153075d3-0901-497c-8647-97504bcc216a
+                                                                                    [rateKey] => 8d55a89b-3e17-4b06-b10a-6939d1e7ffd5
                                                                                 )
 
                                                                         )
@@ -793,6 +793,451 @@ SimpleXMLElement Object
 
                         )
 
+                    [2] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [order] => 2
+                                    [ubsScore] => 1084497
+                                )
+
+                            [hotelId] => 123612
+                            [name] => Eiffel Seine
+                            [address1] => 3 Boulevard De Grenelle
+                            [city] => Paris
+                            [postalCode] => 75015
+                            [countryCode] => FR
+                            [airportCode] => ORY
+                            [supplierType] => E
+                            [propertyCategory] => 1
+                            [hotelRating] => 3.0
+                            [confidenceRating] => 52
+                            [amenityMask] => 2
+                            [tripAdvisorRating] => 4.5
+                            [tripAdvisorReviewCount] => 1533
+                            [tripAdvisorRatingUrl] => http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-12345-4.gif
+                            [locationDescription] => Near Eiffel Tower
+                            [shortDescription] => &lt;p&gt;&lt;b&gt;Property Location&lt;/b&gt; &lt;br /&gt;With a stay at Eiffel Seine in Paris (Eiffel Tower - Orsay Museum), you&apos;ll be minutes from Pont de Bir-Hakeim and Wine Museum. This romantic hotel is close to Eiffel
+                            [highRate] => 155.45
+                            [lowRate] => 155.45
+                            [rateCurrencyCode] => EUR
+                            [latitude] => 48.85435
+                            [longitude] => 2.28914
+                            [proximityDistance] => 0.1384333
+                            [proximityUnit] => MI
+                            [hotelInDestination] => true
+                            [thumbNailUrl] => /hotels/1000000/10000/2800/2719/2719_125_t.jpg
+                            [deepLink] => http://www.travelnow.com/templates/428432/hotels/123612/overview?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;roomsCount=1&amp;rooms[0].adultsCount=2
+                            [RoomRateDetailsList] => SimpleXMLElement Object
+                                (
+                                    [RoomRateDetails] => Array
+                                        (
+                                            [0] => SimpleXMLElement Object
+                                                (
+                                                    [roomTypeCode] => 34012
+                                                    [rateCode] => 200223798
+                                                    [maxRoomOccupancy] => 2
+                                                    [quotedRoomOccupancy] => 2
+                                                    [minGuestAge] => 0
+                                                    [roomDescription] => Classic Room
+                                                    [propertyAvailable] => true
+                                                    [propertyRestricted] => false
+                                                    [expediaPropertyId] => 2719
+                                                    [RateInfos] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 1
+                                                                )
+
+                                                            [RateInfo] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [priceBreakdown] => true
+                                                                            [promo] => false
+                                                                            [rateChange] => false
+                                                                        )
+
+                                                                    [RoomGroup] => SimpleXMLElement Object
+                                                                        (
+                                                                            [Room] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [numberOfAdults] => 2
+                                                                                    [numberOfChildren] => 0
+                                                                                    [rateKey] => 07dc0c13-df4b-4e70-bbb7-f633d11a220a
+                                                                                )
+
+                                                                        )
+
+                                                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [averageBaseRate] => 155.45
+                                                                                    [averageRate] => 155.45
+                                                                                    [commissionableUsdTotal] => 392.4
+                                                                                    [currencyCode] => EUR
+                                                                                    [maxNightlyRate] => 155.45
+                                                                                    [nightlyRateTotal] => 310.9
+                                                                                    [surchargeTotal] => 31.1
+                                                                                    [total] => 342.0
+                                                                                )
+
+                                                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [@attributes] => Array
+                                                                                        (
+                                                                                            [size] => 2
+                                                                                        )
+
+                                                                                    [NightlyRate] => Array
+                                                                                        (
+                                                                                            [0] => SimpleXMLElement Object
+                                                                                                (
+                                                                                                    [@attributes] => Array
+                                                                                                        (
+                                                                                                            [baseRate] => 155.45
+                                                                                                            [rate] => 155.45
+                                                                                                            [promo] => false
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [1] => SimpleXMLElement Object
+                                                                                                (
+                                                                                                    [@attributes] => Array
+                                                                                                        (
+                                                                                                            [baseRate] => 155.45
+                                                                                                            [rate] => 155.45
+                                                                                                            [promo] => false
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                        )
+
+                                                                                )
+
+                                                                            [Surcharges] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [@attributes] => Array
+                                                                                        (
+                                                                                            [size] => 1
+                                                                                        )
+
+                                                                                    [0] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [@attributes] => Array
+                                                                                                (
+                                                                                                    [type] => TaxAndServiceFee
+                                                                                                    [amount] => 31.1
+                                                                                                )
+
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [cancellationPolicy] => This rate is non-refundable and cannot be changed or cancelled - if you do choose to change or cancel this booking you will not be refunded any of the payment.
+                                                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                                                        (
+                                                                            [CancelPolicyInfo] => Array
+                                                                                (
+                                                                                    [0] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [versionId] => 207838109
+                                                                                            [cancelTime] => 23:59:00
+                                                                                            [startWindowHours] => 0
+                                                                                            [nightCount] => 0
+                                                                                            [percent] => 100
+                                                                                            [currencyCode] => EUR
+                                                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                                                        )
+
+                                                                                    [1] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [versionId] => 207838108
+                                                                                            [cancelTime] => 23:59:00
+                                                                                            [startWindowHours] => 999
+                                                                                            [nightCount] => 0
+                                                                                            [percent] => 100
+                                                                                            [currencyCode] => EUR
+                                                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [nonRefundable] => true
+                                                                    [rateType] => MerchantStandard
+                                                                    [currentAllotment] => 4
+                                                                )
+
+                                                        )
+
+                                                    [ValueAdds] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 1
+                                                                )
+
+                                                            [ValueAdd] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [id] => 2048
+                                                                        )
+
+                                                                    [description] => Free Wireless Internet
+                                                                )
+
+                                                        )
+
+                                                    [BedTypes] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 2
+                                                                )
+
+                                                            [BedType] => Array
+                                                                (
+                                                                    [0] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [id] => 15
+                                                                                )
+
+                                                                            [description] => 1 queen
+                                                                        )
+
+                                                                    [1] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [id] => 25
+                                                                                )
+
+                                                                            [description] => Two Twin Beds
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [smokingPreferences] => S,NS
+                                                )
+
+                                            [1] => SimpleXMLElement Object
+                                                (
+                                                    [roomTypeCode] => 34012
+                                                    [rateCode] => 70583
+                                                    [maxRoomOccupancy] => 2
+                                                    [quotedRoomOccupancy] => 2
+                                                    [minGuestAge] => 0
+                                                    [roomDescription] => Classic Room
+                                                    [propertyAvailable] => true
+                                                    [propertyRestricted] => false
+                                                    [expediaPropertyId] => 2719
+                                                    [RateInfos] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 1
+                                                                )
+
+                                                            [RateInfo] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [priceBreakdown] => true
+                                                                            [promo] => false
+                                                                            [rateChange] => false
+                                                                        )
+
+                                                                    [RoomGroup] => SimpleXMLElement Object
+                                                                        (
+                                                                            [Room] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [numberOfAdults] => 2
+                                                                                    [numberOfChildren] => 0
+                                                                                    [rateKey] => 6589f2cd-638f-48ed-adb7-88d8556bd390
+                                                                                )
+
+                                                                        )
+
+                                                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [averageBaseRate] => 163.64
+                                                                                    [averageRate] => 163.64
+                                                                                    [commissionableUsdTotal] => 413.08
+                                                                                    [currencyCode] => EUR
+                                                                                    [maxNightlyRate] => 163.64
+                                                                                    [nightlyRateTotal] => 327.28
+                                                                                    [surchargeTotal] => 32.72
+                                                                                    [total] => 360.0
+                                                                                )
+
+                                                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [@attributes] => Array
+                                                                                        (
+                                                                                            [size] => 2
+                                                                                        )
+
+                                                                                    [NightlyRate] => Array
+                                                                                        (
+                                                                                            [0] => SimpleXMLElement Object
+                                                                                                (
+                                                                                                    [@attributes] => Array
+                                                                                                        (
+                                                                                                            [baseRate] => 163.64
+                                                                                                            [rate] => 163.64
+                                                                                                            [promo] => false
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [1] => SimpleXMLElement Object
+                                                                                                (
+                                                                                                    [@attributes] => Array
+                                                                                                        (
+                                                                                                            [baseRate] => 163.64
+                                                                                                            [rate] => 163.64
+                                                                                                            [promo] => false
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                        )
+
+                                                                                )
+
+                                                                            [Surcharges] => SimpleXMLElement Object
+                                                                                (
+                                                                                    [@attributes] => Array
+                                                                                        (
+                                                                                            [size] => 1
+                                                                                        )
+
+                                                                                    [0] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [@attributes] => Array
+                                                                                                (
+                                                                                                    [type] => TaxAndServiceFee
+                                                                                                    [amount] => 32.72
+                                                                                                )
+
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [cancellationPolicy] => We understand that sometimes your travel plans change. We do not charge a change or cancel fee. However, this property (Eiffel Seine) imposes the following penalty to its customers that we are required to pass on: Cancellations or changes made after 11:59 PM ((GMT+01:00) Brussels, Copenhagen, Madrid, Paris) on Aug 30, 2015 are subject to a 1 Night Room &amp; Tax penalty. The property makes no refunds for no shows or early checkouts.
+                                                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                                                        (
+                                                                            [CancelPolicyInfo] => Array
+                                                                                (
+                                                                                    [0] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [versionId] => 210785537
+                                                                                            [cancelTime] => 23:59:00
+                                                                                            [startWindowHours] => 0
+                                                                                            [nightCount] => 1
+                                                                                            [currencyCode] => EUR
+                                                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                                                        )
+
+                                                                                    [1] => SimpleXMLElement Object
+                                                                                        (
+                                                                                            [versionId] => 210785536
+                                                                                            [cancelTime] => 23:59:00
+                                                                                            [startWindowHours] => 48
+                                                                                            [nightCount] => 0
+                                                                                            [currencyCode] => EUR
+                                                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [nonRefundable] => false
+                                                                    [rateType] => MerchantStandard
+                                                                    [currentAllotment] => 4
+                                                                )
+
+                                                        )
+
+                                                    [ValueAdds] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 1
+                                                                )
+
+                                                            [ValueAdd] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [id] => 2048
+                                                                        )
+
+                                                                    [description] => Free Wireless Internet
+                                                                )
+
+                                                        )
+
+                                                    [BedTypes] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [size] => 2
+                                                                )
+
+                                                            [BedType] => Array
+                                                                (
+                                                                    [0] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [id] => 15
+                                                                                )
+
+                                                                            [description] => 1 queen
+                                                                        )
+
+                                                                    [1] => SimpleXMLElement Object
+                                                                        (
+                                                                            [@attributes] => Array
+                                                                                (
+                                                                                    [id] => 25
+                                                                                )
+
+                                                                            [description] => Two Twin Beds
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                    [smokingPreferences] => S,NS
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
                 )
 
         )
@@ -903,10 +1348,61 @@ Array
 
         )
 
+    [2] => Array
+        (
+            [hotelId] => SimpleXMLElement Object
+                (
+                    [0] => 123612
+                )
+
+            [rooms] => Array
+                (
+                    [0] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 200223798
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 34012
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 342.0
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 70583
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 34012
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 360.0
+                                )
+
+                        )
+
+                )
+
+        )
+
 )
 
 Avail Request for Hotel ID: 454830
-http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=a5bc54378c06548af15dc95cf4267c76&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=5208c30aeec6ba1d762cb40a7e58a0a2&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
 <HotelRoomAvailabilityRequest><hotelId>454830</hotelId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>10</numberOfResults><maxRatePlanCount>2</maxRatePlanCount></HotelRoomAvailabilityRequest>
 AVAIL response for Hotel ID: 454830
 SimpleXMLElement Object
@@ -916,7 +1412,7 @@ SimpleXMLElement Object
             [size] => 4
         )
 
-    [customerSessionId] => 0ABAAA8E-2E8C-2914-8D02-AD4660902499
+    [customerSessionId] => 0ABAAA41-AC15-2091-48D2-0BDAADD967CF
     [hotelId] => 454830
     [arrivalDate] => 09/01/2015
     [departureDate] => 09/03/2015
@@ -984,7 +1480,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => d165a31f-2ffb-4f26-85bf-310c62769beb
+                                                    [rateKey] => 3e98c8f2-2877-4eb1-aae9-4b56db602b03
                                                 )
 
                                         )
@@ -1097,7 +1593,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523702&amp;roomTypeCode=200710113&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=d165a31f-2ffb-4f26-85bf-310c62769beb
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523702&amp;roomTypeCode=200710113&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=3e98c8f2-2877-4eb1-aae9-4b56db602b03
                 )
 
             [1] => SimpleXMLElement Object
@@ -1153,7 +1649,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 594faf6e-f0fd-48b3-a683-3a863f838256
+                                                    [rateKey] => ca272924-3190-4c17-a83e-820c9c18ada4
                                                 )
 
                                         )
@@ -1266,7 +1762,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523600&amp;roomTypeCode=200710099&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=594faf6e-f0fd-48b3-a683-3a863f838256
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523600&amp;roomTypeCode=200710099&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=ca272924-3190-4c17-a83e-820c9c18ada4
                 )
 
             [2] => SimpleXMLElement Object
@@ -1322,7 +1818,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 2292ae6a-822d-474d-b66f-d59282c4783c
+                                                    [rateKey] => 708e7da3-47ba-4e33-9bcf-c1e0eac9c730
                                                 )
 
                                         )
@@ -1435,7 +1931,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=700.00&amp;supplierType=E&amp;rateCode=203523819&amp;roomTypeCode=200710125&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=2292ae6a-822d-474d-b66f-d59282c4783c
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=700.00&amp;supplierType=E&amp;rateCode=203523819&amp;roomTypeCode=200710125&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=708e7da3-47ba-4e33-9bcf-c1e0eac9c730
                 )
 
             [3] => SimpleXMLElement Object
@@ -1491,7 +1987,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 061800a0-4f7d-4a1f-8702-f065bec53bcd
+                                                    [rateKey] => 1e3e4e79-624b-4cad-a74c-5f6aac247c4b
                                                 )
 
                                         )
@@ -1604,7 +2100,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=820.00&amp;supplierType=E&amp;rateCode=203523887&amp;roomTypeCode=200710126&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=061800a0-4f7d-4a1f-8702-f065bec53bcd
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=820.00&amp;supplierType=E&amp;rateCode=203523887&amp;roomTypeCode=200710126&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=1e3e4e79-624b-4cad-a74c-5f6aac247c4b
                 )
 
         )
@@ -1612,7 +2108,7 @@ SimpleXMLElement Object
 )
 
 Avail Request for Hotel ID: 183323
-http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=a5bc54378c06548af15dc95cf4267c76&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=5208c30aeec6ba1d762cb40a7e58a0a2&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
 <HotelRoomAvailabilityRequest><hotelId>183323</hotelId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>10</numberOfResults><maxRatePlanCount>2</maxRatePlanCount></HotelRoomAvailabilityRequest>
 AVAIL response for Hotel ID: 183323
 SimpleXMLElement Object
@@ -1622,7 +2118,7 @@ SimpleXMLElement Object
             [size] => 12
         )
 
-    [customerSessionId] => 0ABAAAC7-2670-7791-48D2-0AB535797430
+    [customerSessionId] => 0ABAAA42-77DF-7991-48D2-0BE96439424D
     [hotelId] => 183323
     [arrivalDate] => 09/01/2015
     [departureDate] => 09/03/2015
@@ -1690,7 +2186,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 989f487c-2b9c-4385-bad5-f0ed70b3bf77
+                                                    [rateKey] => ab9a380c-e8b2-419c-80dc-550c8cc7eed1
                                                 )
 
                                         )
@@ -1805,7 +2301,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180177&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=989f487c-2b9c-4385-bad5-f0ed70b3bf77
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180177&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=ab9a380c-e8b2-419c-80dc-550c8cc7eed1
                 )
 
             [1] => SimpleXMLElement Object
@@ -1861,7 +2357,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => d96ea522-b371-42f9-b0b2-97f9170d3067
+                                                    [rateKey] => da97fffc-63e1-4651-8906-d6067e5cf327
                                                 )
 
                                         )
@@ -1976,7 +2472,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180180&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=d96ea522-b371-42f9-b0b2-97f9170d3067
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180180&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=da97fffc-63e1-4651-8906-d6067e5cf327
                 )
 
             [2] => SimpleXMLElement Object
@@ -2032,7 +2528,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 7d329956-03d8-444b-a51e-08ecfde77a93
+                                                    [rateKey] => 08529843-fea0-49fe-86f6-d0c430f46ac4
                                                 )
 
                                         )
@@ -2147,7 +2643,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180179&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=7d329956-03d8-444b-a51e-08ecfde77a93
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180179&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=08529843-fea0-49fe-86f6-d0c430f46ac4
                 )
 
             [3] => SimpleXMLElement Object
@@ -2203,7 +2699,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 58ac1704-d633-41f1-adb1-e935abe1950b
+                                                    [rateKey] => 7ce88134-92aa-4b3a-9b53-a8f81c0f1cf3
                                                 )
 
                                         )
@@ -2318,7 +2814,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=331.82&amp;supplierType=E&amp;rateCode=201180176&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=58ac1704-d633-41f1-adb1-e935abe1950b
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=331.82&amp;supplierType=E&amp;rateCode=201180176&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=7ce88134-92aa-4b3a-9b53-a8f81c0f1cf3
                 )
 
             [4] => SimpleXMLElement Object
@@ -2374,7 +2870,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 37999433-b4bc-4815-abf2-fa20ceb3d843
+                                                    [rateKey] => 2d84f1ef-e87e-40a0-b8b2-6b0a55e34cae
                                                 )
 
                                         )
@@ -2489,7 +2985,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=200001777&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=37999433-b4bc-4815-abf2-fa20ceb3d843
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=200001777&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=2d84f1ef-e87e-40a0-b8b2-6b0a55e34cae
                 )
 
             [5] => SimpleXMLElement Object
@@ -2545,7 +3041,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 60c3590f-768c-4aab-89d6-1f4a4f168ee3
+                                                    [rateKey] => 4bb14c37-bca0-4a70-a290-502fb754f1ec
                                                 )
 
                                         )
@@ -2660,7 +3156,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552307&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=60c3590f-768c-4aab-89d6-1f4a4f168ee3
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552307&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=4bb14c37-bca0-4a70-a290-502fb754f1ec
                 )
 
             [6] => SimpleXMLElement Object
@@ -2716,7 +3212,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 7cf3d6d2-cfb9-4e1a-8617-ba928fda7f55
+                                                    [rateKey] => 9bc8f1dd-1efa-420e-b644-561b8b824f7a
                                                 )
 
                                         )
@@ -2831,7 +3327,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552258&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=7cf3d6d2-cfb9-4e1a-8617-ba928fda7f55
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552258&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=9bc8f1dd-1efa-420e-b644-561b8b824f7a
                 )
 
             [7] => SimpleXMLElement Object
@@ -2887,7 +3383,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => e62fdd36-081b-42b7-b88a-64771bfa96b8
+                                                    [rateKey] => d76a6e57-8583-42ac-937a-20191c83bf19
                                                 )
 
                                         )
@@ -3002,7 +3498,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=402.00&amp;supplierType=E&amp;rateCode=423008&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=e62fdd36-081b-42b7-b88a-64771bfa96b8
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=402.00&amp;supplierType=E&amp;rateCode=423008&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=d76a6e57-8583-42ac-937a-20191c83bf19
                 )
 
             [8] => SimpleXMLElement Object
@@ -3058,7 +3554,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 6e84aed1-002b-44bd-bc30-dfc67d80551f
+                                                    [rateKey] => dda9cf4d-d595-4aeb-8121-3595aec25a6c
                                                 )
 
                                         )
@@ -3171,7 +3667,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=200001770&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=6e84aed1-002b-44bd-bc30-dfc67d80551f
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=200001770&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=dda9cf4d-d595-4aeb-8121-3595aec25a6c
                 )
 
             [9] => SimpleXMLElement Object
@@ -3227,7 +3723,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 66050f4a-31cf-4a4a-b144-d50fca3df0e3
+                                                    [rateKey] => 614b45b3-ab72-4c53-b933-ee338bc08b0b
                                                 )
 
                                         )
@@ -3340,7 +3836,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552250&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=66050f4a-31cf-4a4a-b144-d50fca3df0e3
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552250&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=614b45b3-ab72-4c53-b933-ee338bc08b0b
                 )
 
             [10] => SimpleXMLElement Object
@@ -3396,7 +3892,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 18f67791-6595-408d-8f9b-aba94a7459a9
+                                                    [rateKey] => 4fa5e062-9930-4aeb-9abc-40e19a0bae13
                                                 )
 
                                         )
@@ -3509,7 +4005,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552300&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=18f67791-6595-408d-8f9b-aba94a7459a9
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552300&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=4fa5e062-9930-4aeb-9abc-40e19a0bae13
                 )
 
             [11] => SimpleXMLElement Object
@@ -3565,7 +4061,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 2747d4e5-2ada-44a8-b23e-e152a412901d
+                                                    [rateKey] => a787c948-05b2-4698-9e43-a1b7fcc0eb24
                                                 )
 
                                         )
@@ -3678,7 +4174,1641 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=474.00&amp;supplierType=E&amp;rateCode=422989&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=2747d4e5-2ada-44a8-b23e-e152a412901d
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=474.00&amp;supplierType=E&amp;rateCode=422989&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=a787c948-05b2-4698-9e43-a1b7fcc0eb24
+                )
+
+        )
+
+)
+
+Avail Request for Hotel ID: 123612
+http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=5208c30aeec6ba1d762cb40a7e58a0a2&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+<HotelRoomAvailabilityRequest><hotelId>123612</hotelId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>10</numberOfResults><maxRatePlanCount>2</maxRatePlanCount></HotelRoomAvailabilityRequest>
+AVAIL response for Hotel ID: 123612
+SimpleXMLElement Object
+(
+    [@attributes] => Array
+        (
+            [size] => 8
+        )
+
+    [customerSessionId] => 0ABAAABA-F87F-1091-48D2-0BDFF9493EF4
+    [hotelId] => 123612
+    [arrivalDate] => 09/01/2015
+    [departureDate] => 09/03/2015
+    [hotelName] => Eiffel Seine
+    [hotelAddress] => 3 Boulevard De Grenelle
+    [hotelCity] => Paris
+    [hotelCountry] => FR
+    [numberOfRoomsRequested] => 1
+    [checkInInstructions] => <p><b>National Rating</b> <br />This hotel has received its official star rating from the French Tourism Development Agency, ATOUT France.</p><p><b>Fees</b> <br /><p>The following fees and deposits are charged by the property at time of service, check-in, or check-out. </p> <ul> <li>Breakfast fee: EUR 16 per person (approximately)</li>                     </ul> <p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. </p></p>
+    [tripAdvisorRating] => 4.5
+    [tripAdvisorReviewCount] => 1533
+    [tripAdvisorRatingUrl] => http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-12345-4.gif
+    [HotelRoomResponse] => Array
+        (
+            [0] => SimpleXMLElement Object
+                (
+                    [rateCode] => 200223798
+                    [roomTypeCode] => 34012
+                    [rateDescription] => Classic Room
+                    [roomTypeDescription] => Classic Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => cd9d1e60-f075-48c4-b4c6-07396c70e1fd
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 155.45
+                                                    [averageRate] => 155.45
+                                                    [commissionableUsdTotal] => 392.4
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 155.45
+                                                    [nightlyRateTotal] => 310.9
+                                                    [surchargeTotal] => 31.1
+                                                    [total] => 342.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 155.45
+                                                                            [rate] => 155.45
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 155.45
+                                                                            [rate] => 155.45
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 31.1
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => This rate is non-refundable and cannot be changed or cancelled - if you do choose to change or cancel this booking you will not be refunded any of the payment.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838109
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838108
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 999
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => true
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 4
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 31.10
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=200223798&amp;roomTypeCode=34012&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=cd9d1e60-f075-48c4-b4c6-07396c70e1fd
+                )
+
+            [1] => SimpleXMLElement Object
+                (
+                    [rateCode] => 70583
+                    [roomTypeCode] => 34012
+                    [rateDescription] => Classic Room
+                    [roomTypeDescription] => Classic Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => ead6ef3d-51cf-40f6-9153-7f453dde1e8a
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 163.64
+                                                    [averageRate] => 163.64
+                                                    [commissionableUsdTotal] => 413.08
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 163.64
+                                                    [nightlyRateTotal] => 327.28
+                                                    [surchargeTotal] => 32.72
+                                                    [total] => 360.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 163.64
+                                                                            [rate] => 163.64
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 163.64
+                                                                            [rate] => 163.64
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 32.72
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => We understand that sometimes your travel plans change. We do not charge a change or cancel fee. However, this property (Eiffel Seine) imposes the following penalty to its customers that we are required to pass on: Cancellations or changes made after 11:59 PM ((GMT+01:00) Brussels, Copenhagen, Madrid, Paris) on Aug 30, 2015 are subject to a 1 Night Room &amp; Tax penalty. The property makes no refunds for no shows or early checkouts.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785537
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 1
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785536
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 48
+                                                            [nightCount] => 0
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => false
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 4
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 32.72
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=360.00&amp;supplierType=E&amp;rateCode=70583&amp;roomTypeCode=34012&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=ead6ef3d-51cf-40f6-9153-7f453dde1e8a
+                )
+
+            [2] => SimpleXMLElement Object
+                (
+                    [rateCode] => 200223796
+                    [roomTypeCode] => 128368
+                    [rateDescription] => Club Room
+                    [roomTypeDescription] => Club Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => 2a5e3e82-136c-425b-83a0-efb81163b9c6
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 180.0
+                                                    [averageRate] => 180.0
+                                                    [commissionableUsdTotal] => 454.37
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 180.0
+                                                    [nightlyRateTotal] => 360.0
+                                                    [surchargeTotal] => 36.0
+                                                    [total] => 396.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 180.0
+                                                                            [rate] => 180.0
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 180.0
+                                                                            [rate] => 180.0
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 36.0
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => This rate is non-refundable and cannot be changed or cancelled - if you do choose to change or cancel this booking you will not be refunded any of the payment.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838109
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838108
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 999
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => true
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 36.00
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=396.00&amp;supplierType=E&amp;rateCode=200223796&amp;roomTypeCode=128368&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=2a5e3e82-136c-425b-83a0-efb81163b9c6
+                )
+
+            [3] => SimpleXMLElement Object
+                (
+                    [rateCode] => 296642
+                    [roomTypeCode] => 128368
+                    [rateDescription] => Club Room
+                    [roomTypeDescription] => Club Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => 19145e76-bdc3-42ac-8183-1df60f984645
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 189.09
+                                                    [averageRate] => 189.09
+                                                    [commissionableUsdTotal] => 477.32
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 189.09
+                                                    [nightlyRateTotal] => 378.18
+                                                    [surchargeTotal] => 37.82
+                                                    [total] => 416.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 189.09
+                                                                            [rate] => 189.09
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 189.09
+                                                                            [rate] => 189.09
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 37.82
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => We understand that sometimes your travel plans change. We do not charge a change or cancel fee. However, this property (Eiffel Seine) imposes the following penalty to its customers that we are required to pass on: Cancellations or changes made after 11:59 PM ((GMT+01:00) Brussels, Copenhagen, Madrid, Paris) on Aug 30, 2015 are subject to a 1 Night Room &amp; Tax penalty. The property makes no refunds for no shows or early checkouts.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785537
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 1
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785536
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 48
+                                                            [nightCount] => 0
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => false
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 37.82
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=416.00&amp;supplierType=E&amp;rateCode=296642&amp;roomTypeCode=128368&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=19145e76-bdc3-42ac-8183-1df60f984645
+                )
+
+            [4] => SimpleXMLElement Object
+                (
+                    [rateCode] => 200223800
+                    [roomTypeCode] => 354320
+                    [rateDescription] => Superior Double or Twin Room
+                    [roomTypeDescription] => Superior Double or Twin Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => 9db2eee7-ba99-4ea2-b7ad-623bbe70dcc0
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 209.09
+                                                    [averageRate] => 209.09
+                                                    [commissionableUsdTotal] => 527.81
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 209.09
+                                                    [nightlyRateTotal] => 418.18
+                                                    [surchargeTotal] => 41.82
+                                                    [total] => 460.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 209.09
+                                                                            [rate] => 209.09
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 209.09
+                                                                            [rate] => 209.09
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 41.82
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => This rate is non-refundable and cannot be changed or cancelled - if you do choose to change or cancel this booking you will not be refunded any of the payment.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838109
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838108
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 999
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => true
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 41.82
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=460.00&amp;supplierType=E&amp;rateCode=200223800&amp;roomTypeCode=354320&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=9db2eee7-ba99-4ea2-b7ad-623bbe70dcc0
+                )
+
+            [5] => SimpleXMLElement Object
+                (
+                    [rateCode] => 1120618
+                    [roomTypeCode] => 354320
+                    [rateDescription] => Superior Double or Twin Room
+                    [roomTypeDescription] => Superior Double or Twin Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 2
+                                )
+
+                            [BedType] => Array
+                                (
+                                    [0] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 15
+                                                )
+
+                                            [description] => 1 queen
+                                        )
+
+                                    [1] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [id] => 25
+                                                )
+
+                                            [description] => Two Twin Beds
+                                        )
+
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 2
+                    [quotedOccupancy] => 2
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => 17d2b16c-f46c-40d1-a079-8adb34fab1a8
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 220.0
+                                                    [averageRate] => 220.0
+                                                    [commissionableUsdTotal] => 555.35
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 220.0
+                                                    [nightlyRateTotal] => 440.0
+                                                    [surchargeTotal] => 44.0
+                                                    [total] => 484.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 220.0
+                                                                            [rate] => 220.0
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 220.0
+                                                                            [rate] => 220.0
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 44.0
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => We understand that sometimes your travel plans change. We do not charge a change or cancel fee. However, this property (Eiffel Seine) imposes the following penalty to its customers that we are required to pass on: Cancellations or changes made after 11:59 PM ((GMT+01:00) Brussels, Copenhagen, Madrid, Paris) on Aug 30, 2015 are subject to a 1 Night Room &amp; Tax penalty. The property makes no refunds for no shows or early checkouts.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785537
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 1
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785536
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 48
+                                                            [nightCount] => 0
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => false
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 44.00
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=484.00&amp;supplierType=E&amp;rateCode=1120618&amp;roomTypeCode=354320&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=17d2b16c-f46c-40d1-a079-8adb34fab1a8
+                )
+
+            [6] => SimpleXMLElement Object
+                (
+                    [rateCode] => 200223801
+                    [roomTypeCode] => 128367
+                    [rateDescription] => Superior Triple Room
+                    [roomTypeDescription] => Superior Triple Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [BedType] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 68
+                                        )
+
+                                    [description] => 1 queen and 1 sofa bed
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 3
+                    [quotedOccupancy] => 3
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => c7e41f9d-312a-44ec-b475-23ae521d414c
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 230.91
+                                                    [averageRate] => 230.91
+                                                    [commissionableUsdTotal] => 582.89
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 230.91
+                                                    [nightlyRateTotal] => 461.82
+                                                    [surchargeTotal] => 46.18
+                                                    [total] => 508.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 230.91
+                                                                            [rate] => 230.91
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 230.91
+                                                                            [rate] => 230.91
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 46.18
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => This rate is non-refundable and cannot be changed or cancelled - if you do choose to change or cancel this booking you will not be refunded any of the payment.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838109
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 207838108
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 999
+                                                            [nightCount] => 0
+                                                            [percent] => 100
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => true
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 46.18
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=508.00&amp;supplierType=E&amp;rateCode=200223801&amp;roomTypeCode=128367&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=c7e41f9d-312a-44ec-b475-23ae521d414c
+                )
+
+            [7] => SimpleXMLElement Object
+                (
+                    [rateCode] => 296639
+                    [roomTypeCode] => 128367
+                    [rateDescription] => Superior Triple Room
+                    [roomTypeDescription] => Superior Triple Room
+                    [supplierType] => E
+                    [propertyId] => 2719
+                    [BedTypes] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [BedType] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 68
+                                        )
+
+                                    [description] => 1 queen and 1 sofa bed
+                                )
+
+                        )
+
+                    [smokingPreferences] => S,NS
+                    [rateOccupancyPerRoom] => 3
+                    [quotedOccupancy] => 3
+                    [minGuestAge] => 0
+                    [RateInfos] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [RateInfo] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [priceBreakdown] => true
+                                            [promo] => false
+                                            [rateChange] => false
+                                        )
+
+                                    [RoomGroup] => SimpleXMLElement Object
+                                        (
+                                            [Room] => SimpleXMLElement Object
+                                                (
+                                                    [numberOfAdults] => 2
+                                                    [numberOfChildren] => 0
+                                                    [rateKey] => ac7afb4f-8a9b-4a3f-b4b9-1871cd33eac0
+                                                )
+
+                                        )
+
+                                    [ChargeableRateInfo] => SimpleXMLElement Object
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [averageBaseRate] => 242.73
+                                                    [averageRate] => 242.73
+                                                    [commissionableUsdTotal] => 612.72
+                                                    [currencyCode] => EUR
+                                                    [maxNightlyRate] => 242.73
+                                                    [nightlyRateTotal] => 485.46
+                                                    [surchargeTotal] => 48.54
+                                                    [total] => 534.0
+                                                )
+
+                                            [NightlyRatesPerRoom] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 2
+                                                        )
+
+                                                    [NightlyRate] => Array
+                                                        (
+                                                            [0] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 242.73
+                                                                            [rate] => 242.73
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                            [1] => SimpleXMLElement Object
+                                                                (
+                                                                    [@attributes] => Array
+                                                                        (
+                                                                            [baseRate] => 242.73
+                                                                            [rate] => 242.73
+                                                                            [promo] => false
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [Surcharges] => SimpleXMLElement Object
+                                                (
+                                                    [@attributes] => Array
+                                                        (
+                                                            [size] => 1
+                                                        )
+
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [type] => TaxAndServiceFee
+                                                                    [amount] => 48.54
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [cancellationPolicy] => We understand that sometimes your travel plans change. We do not charge a change or cancel fee. However, this property (Eiffel Seine) imposes the following penalty to its customers that we are required to pass on: Cancellations or changes made after 11:59 PM ((GMT+01:00) Brussels, Copenhagen, Madrid, Paris) on Aug 30, 2015 are subject to a 1 Night Room &amp; Tax penalty. The property makes no refunds for no shows or early checkouts.
+                                    [CancelPolicyInfoList] => SimpleXMLElement Object
+                                        (
+                                            [CancelPolicyInfo] => Array
+                                                (
+                                                    [0] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785537
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 0
+                                                            [nightCount] => 1
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                    [1] => SimpleXMLElement Object
+                                                        (
+                                                            [versionId] => 210785536
+                                                            [cancelTime] => 23:59:00
+                                                            [startWindowHours] => 48
+                                                            [nightCount] => 0
+                                                            [currencyCode] => EUR
+                                                            [timeZoneDescription] => (GMT+01:00) Brussels, Copenhagen, Madrid, Paris
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [nonRefundable] => false
+                                    [rateType] => MerchantStandard
+                                    [currentAllotment] => 1
+                                    [guaranteeRequired] => false
+                                    [depositRequired] => true
+                                    [taxRate] => 48.54
+                                )
+
+                        )
+
+                    [ValueAdds] => SimpleXMLElement Object
+                        (
+                            [@attributes] => Array
+                                (
+                                    [size] => 1
+                                )
+
+                            [ValueAdd] => SimpleXMLElement Object
+                                (
+                                    [@attributes] => Array
+                                        (
+                                            [id] => 2048
+                                        )
+
+                                    [description] => Free Wireless Internet
+                                )
+
+                        )
+
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/123612/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=534.00&amp;supplierType=E&amp;rateCode=296639&amp;roomTypeCode=128367&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=ac7afb4f-8a9b-4a3f-b4b9-1871cd33eac0
                 )
 
         )
@@ -4009,6 +6139,171 @@ Array
                             [price] => SimpleXMLElement Object
                                 (
                                     [0] => 474.0
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [hotelId] => SimpleXMLElement Object
+                (
+                    [0] => 123612
+                )
+
+            [rooms] => Array
+                (
+                    [0] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 200223798
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 34012
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 342.0
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 70583
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 34012
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 360.0
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 200223796
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 128368
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 396.0
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 296642
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 128368
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 416.0
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 200223800
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 354320
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 460.0
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 1120618
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 354320
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 484.0
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 200223801
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 128367
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 508.0
+                                )
+
+                        )
+
+                    [7] => Array
+                        (
+                            [rateCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 296639
+                                )
+
+                            [roomTypeCode] => SimpleXMLElement Object
+                                (
+                                    [0] => 128367
+                                )
+
+                            [price] => SimpleXMLElement Object
+                                (
+                                    [0] => 534.0
                                 )
 
                         )

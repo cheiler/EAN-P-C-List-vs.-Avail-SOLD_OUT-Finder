@@ -146,8 +146,8 @@ foreach($listResult as $entry){
     
 //Calculate Results and Display in Table
 
-
-screenlog($listResult);
+$space = "";
+//screenlog($listResult);
     echo "<table border='1'>";
 foreach($listResult as $list){
     
@@ -156,7 +156,14 @@ foreach($listResult as $list){
        echo "<td>".$list['hotelId']."</td>";
        echo "<td>".$room['rateCode']."</td>";
        echo "<td>".$room['roomTypeCode']."</td>"; 
-       echo "<td>".$room['price']."</td>"; 
+       echo "<td>".$room['price']."</td>";
+       echo "<td>||</td>";
+       echo "<td>".findHotelId($list['hotelId'], $availResult)."</td>";
+       echo "<td>".$space."</td>";
+       echo "<td>".$space."</td>"; 
+       echo "<td>".$space."</td>";
+       
+       
        echo "</tr>\r\n"; 
     }
     

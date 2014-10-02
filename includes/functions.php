@@ -74,4 +74,16 @@ function screenlog($variable){
     
 }
 
+
+function findHotelId($id, $list){
+    $back = "SOLD_OUT";
+    foreach($list as $item){
+        if(intval($item['hotelId']) == intval($id)){
+            $back = $item['hotelId'];
+        }
+    }
+    return $back;
+}
+
+
 ?>
