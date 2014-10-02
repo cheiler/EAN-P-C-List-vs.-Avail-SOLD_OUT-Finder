@@ -126,15 +126,15 @@ foreach($listResult as $entry){
     $availResult[$i]['hotelId']=$hotelId;
     
     $j=0;
-    $rateArray = $availResponse;
+    $rateArray = $availResponse->HotelRoomResponse;
     
-    //screenlog($rateArray);
+    screenlog($rateArray);
     
     foreach($rateArray as $rate){
-         
+        screenlog($rate);
         $availResult[$i]['rooms'][$j]['rateCode'] = $rate->rateCode;
         $availResult[$i]['rooms'][$j]['roomTypeCode'] = $rate->roomTypeCode;
-        $availResult[$i]['rooms'][$j]['price'] = $room->RateInfos->RateInfo->ChargeableRateInfo['total'];
+        $availResult[$i]['rooms'][$j]['price'] = $rate->RateInfos->RateInfo->ChargeableRateInfo['total'];
         $j++;
     }
     $i++;

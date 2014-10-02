@@ -1,16 +1,16 @@
 LOGFILE LIST vs. AVAIL 
-Time: 2014-10-02-09-47-20
+Time: 2014-10-02-10-20-33
 LIST request:
-http://api.ean.com/ean-services/rs/hotel/v3/list?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=f4c7d7e6d5a81dc1591830c40bb83711&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+http://api.ean.com/ean-services/rs/hotel/v3/list?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=c1cf950d160e76e2bb6d22ef8415e2c8&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
 <HotelListRequest><destinationId>9B0681E3-6D9F-47E8-8E14-5389F83569DD</destinationId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>2</numberOfResults><maxRatePlanCount>2</maxRatePlanCount><includeDetails>true</includeDetails></HotelListRequest>
 LIST response:
 SimpleXMLElement Object
 (
-    [customerSessionId] => 0ABAAAAF-503F-B591-48D2-03F42FA9179F
+    [customerSessionId] => 0ABAAA4C-F9AC-FC91-48D2-05DA7F092149
     [numberOfRoomsRequested] => 1
     [moreResultsAvailable] => true
-    [cacheKey] => -71503fb5:148d03f42fa:17b3
-    [cacheLocation] => 10.186.170.175:7300
+    [cacheKey] => -7bf9acfc:148d05da7f0:2162
+    [cacheLocation] => 10.186.170.76:7300
     [cachedSupplierResponse] => SimpleXMLElement Object
         (
             [@attributes] => Array
@@ -19,9 +19,9 @@ SimpleXMLElement Object
                     [cachedTime] => 0
                     [supplierRequestNum] => 1732
                     [supplierResponseNum] => 2
-                    [supplierResponseTime] => 863
-                    [candidatePreptime] => 38
-                    [otherOverheadTime] => 130
+                    [supplierResponseTime] => 1232
+                    [candidatePreptime] => 41
+                    [otherOverheadTime] => 83
                     [tpidUsed] => 5180
                     [matchedCurrency] => true
                     [matchedLocale] => true
@@ -111,7 +111,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => 74b88094-c361-4778-b38c-1768508aaa28
+                                                                                    [rateKey] => d10d3ae7-2316-454f-872f-42526dc95b42
                                                                                 )
 
                                                                         )
@@ -276,7 +276,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => e2797599-ba73-4e06-8d32-3f8a1d5ceba8
+                                                                                    [rateKey] => a19f6218-0f52-4151-9e69-8e77bbd5b83d
                                                                                 )
 
                                                                         )
@@ -486,7 +486,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => 2d0299f2-3fef-4774-a2b2-c808df30e99d
+                                                                                    [rateKey] => 37fc8fd5-2a7e-4bdd-a76c-62f3166c03d4
                                                                                 )
 
                                                                         )
@@ -653,7 +653,7 @@ SimpleXMLElement Object
                                                                                 (
                                                                                     [numberOfAdults] => 2
                                                                                     [numberOfChildren] => 0
-                                                                                    [rateKey] => aeacc8fc-9c51-44af-b32f-97a73d0fc8d6
+                                                                                    [rateKey] => 1489ad35-2f29-4cde-b291-91ad486c78a0
                                                                                 )
 
                                                                         )
@@ -906,7 +906,7 @@ Array
 )
 
 Avail Request for Hotel ID: 454830
-http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=1720b21f6738cf37c46d4d1b3e5d2eb1&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=c08ab978fdb11c951d3adcedeb6da3d1&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
 <HotelRoomAvailabilityRequest><hotelId>454830</hotelId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>10</numberOfResults><maxRatePlanCount>2</maxRatePlanCount></HotelRoomAvailabilityRequest>
 AVAIL response for Hotel ID: 454830
 SimpleXMLElement Object
@@ -916,7 +916,7 @@ SimpleXMLElement Object
             [size] => 4
         )
 
-    [customerSessionId] => 0ABAAAD0-1467-EF91-48D2-03FE80990AC1
+    [customerSessionId] => 0ABAAAB7-C050-6C91-48D2-05E69D090A88
     [hotelId] => 454830
     [arrivalDate] => 09/01/2015
     [departureDate] => 09/03/2015
@@ -984,7 +984,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 14d18929-8636-4042-afdb-4c22a730ca43
+                                                    [rateKey] => 04fde2b5-9162-432b-9ab9-60f24324e722
                                                 )
 
                                         )
@@ -1097,7 +1097,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523702&amp;roomTypeCode=200710113&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=14d18929-8636-4042-afdb-4c22a730ca43
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523702&amp;roomTypeCode=200710113&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=04fde2b5-9162-432b-9ab9-60f24324e722
                 )
 
             [1] => SimpleXMLElement Object
@@ -1153,7 +1153,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 1559c9fb-e8cf-4aa4-80a5-26fa2ecc2ac3
+                                                    [rateKey] => 786bd228-a986-436c-b3dc-ba45ecdf656e
                                                 )
 
                                         )
@@ -1266,7 +1266,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523600&amp;roomTypeCode=200710099&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=1559c9fb-e8cf-4aa4-80a5-26fa2ecc2ac3
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=620.00&amp;supplierType=E&amp;rateCode=203523600&amp;roomTypeCode=200710099&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=786bd228-a986-436c-b3dc-ba45ecdf656e
                 )
 
             [2] => SimpleXMLElement Object
@@ -1322,7 +1322,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => fff720bc-b2d9-46ac-9785-eff4702ebd5a
+                                                    [rateKey] => c0ebc620-9c46-4615-b967-671d51b2d69a
                                                 )
 
                                         )
@@ -1435,7 +1435,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=700.00&amp;supplierType=E&amp;rateCode=203523819&amp;roomTypeCode=200710125&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=fff720bc-b2d9-46ac-9785-eff4702ebd5a
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=700.00&amp;supplierType=E&amp;rateCode=203523819&amp;roomTypeCode=200710125&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=c0ebc620-9c46-4615-b967-671d51b2d69a
                 )
 
             [3] => SimpleXMLElement Object
@@ -1491,7 +1491,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => b9b4dea5-ce7b-42c3-9ced-31272e5e03d9
+                                                    [rateKey] => 5003c129-f907-462a-aa78-0ee6c19dbbba
                                                 )
 
                                         )
@@ -1604,7 +1604,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=820.00&amp;supplierType=E&amp;rateCode=203523887&amp;roomTypeCode=200710126&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=b9b4dea5-ce7b-42c3-9ced-31272e5e03d9
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/454830/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=820.00&amp;supplierType=E&amp;rateCode=203523887&amp;roomTypeCode=200710126&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=5003c129-f907-462a-aa78-0ee6c19dbbba
                 )
 
         )
@@ -1612,7 +1612,7 @@ SimpleXMLElement Object
 )
 
 Avail Request for Hotel ID: 183323
-http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=1720b21f6738cf37c46d4d1b3e5d2eb1&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
+http://api.ean.com/ean-services/rs/hotel/v3/avail?cid=428432&apiKey=2vh3a44vzdp2bsy397cx2ynt&sig=c08ab978fdb11c951d3adcedeb6da3d1&minorRev=26&type=xml&locale=en_US&currencyCode=EUR
 <HotelRoomAvailabilityRequest><hotelId>183323</hotelId><arrivalDate>09/01/2015</arrivalDate><departureDate>09/03/2015</departureDate><RoomGroup><Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup><numberOfResults>10</numberOfResults><maxRatePlanCount>2</maxRatePlanCount></HotelRoomAvailabilityRequest>
 AVAIL response for Hotel ID: 183323
 SimpleXMLElement Object
@@ -1622,7 +1622,7 @@ SimpleXMLElement Object
             [size] => 12
         )
 
-    [customerSessionId] => 0ABAAA7C-8819-7C91-48D2-03FEFB691718
+    [customerSessionId] => 0ABAAA88-5D8C-B914-8D02-5EEC0C901311
     [hotelId] => 183323
     [arrivalDate] => 09/01/2015
     [departureDate] => 09/03/2015
@@ -1690,7 +1690,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 700a96c7-e1e7-424c-9b61-45bf803d4cda
+                                                    [rateKey] => 92abbb3a-f9fd-459b-bd55-0d6ae4403d19
                                                 )
 
                                         )
@@ -1805,7 +1805,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180177&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=700a96c7-e1e7-424c-9b61-45bf803d4cda
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180177&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=92abbb3a-f9fd-459b-bd55-0d6ae4403d19
                 )
 
             [1] => SimpleXMLElement Object
@@ -1861,7 +1861,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => e599c2c4-92d9-4783-bb5d-9a3e558c4f2b
+                                                    [rateKey] => 9b86bd6c-2f4f-4734-9bfd-8a4e460f35aa
                                                 )
 
                                         )
@@ -1976,7 +1976,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180180&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=e599c2c4-92d9-4783-bb5d-9a3e558c4f2b
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180180&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=9b86bd6c-2f4f-4734-9bfd-8a4e460f35aa
                 )
 
             [2] => SimpleXMLElement Object
@@ -2032,7 +2032,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 1cd8910b-f548-4dce-b56a-542245c46d41
+                                                    [rateKey] => 9900ca6a-2429-4969-bdd3-3097981b7548
                                                 )
 
                                         )
@@ -2147,7 +2147,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180179&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=1cd8910b-f548-4dce-b56a-542245c46d41
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=289.78&amp;supplierType=E&amp;rateCode=201180179&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=9900ca6a-2429-4969-bdd3-3097981b7548
                 )
 
             [3] => SimpleXMLElement Object
@@ -2203,7 +2203,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => a6f3ed29-3e8a-492c-9cbc-fbd7d66e6b20
+                                                    [rateKey] => 83a2f18c-1339-4bca-8f30-099ff1f6de01
                                                 )
 
                                         )
@@ -2318,7 +2318,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=331.82&amp;supplierType=E&amp;rateCode=201180176&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=a6f3ed29-3e8a-492c-9cbc-fbd7d66e6b20
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=331.82&amp;supplierType=E&amp;rateCode=201180176&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=83a2f18c-1339-4bca-8f30-099ff1f6de01
                 )
 
             [4] => SimpleXMLElement Object
@@ -2374,7 +2374,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => a1696986-a9cf-4763-af4d-5cb8e2bde25f
+                                                    [rateKey] => 42b5d96c-f51c-4271-a804-d809debcaaef
                                                 )
 
                                         )
@@ -2489,7 +2489,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=200001777&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=a1696986-a9cf-4763-af4d-5cb8e2bde25f
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=200001777&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=42b5d96c-f51c-4271-a804-d809debcaaef
                 )
 
             [5] => SimpleXMLElement Object
@@ -2545,7 +2545,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 45ea75a2-a439-4903-adb5-52cf07224deb
+                                                    [rateKey] => dfac8902-d3e9-4eb4-908a-9e6e5403da4b
                                                 )
 
                                         )
@@ -2660,7 +2660,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552307&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=45ea75a2-a439-4903-adb5-52cf07224deb
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552307&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=dfac8902-d3e9-4eb4-908a-9e6e5403da4b
                 )
 
             [6] => SimpleXMLElement Object
@@ -2716,7 +2716,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 306d3535-69eb-48a6-af54-d534dafa8a5c
+                                                    [rateKey] => 3163b78e-857e-452a-890a-0f62a89e4fc4
                                                 )
 
                                         )
@@ -2831,7 +2831,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552258&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=306d3535-69eb-48a6-af54-d534dafa8a5c
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=342.00&amp;supplierType=E&amp;rateCode=552258&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=3163b78e-857e-452a-890a-0f62a89e4fc4
                 )
 
             [7] => SimpleXMLElement Object
@@ -2887,7 +2887,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 1fd5e6a1-9769-4a22-8d80-97148d2f3dbe
+                                                    [rateKey] => c5e1b810-486b-4712-9089-6bb2fbe9b4d5
                                                 )
 
                                         )
@@ -3002,7 +3002,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=402.00&amp;supplierType=E&amp;rateCode=423008&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=1fd5e6a1-9769-4a22-8d80-97148d2f3dbe
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=402.00&amp;supplierType=E&amp;rateCode=423008&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=c5e1b810-486b-4712-9089-6bb2fbe9b4d5
                 )
 
             [8] => SimpleXMLElement Object
@@ -3058,7 +3058,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => d6f19f40-624d-4184-b311-df770a4272e5
+                                                    [rateKey] => 39c1dd08-fc34-48c8-9d4d-f70696b1b3b7
                                                 )
 
                                         )
@@ -3171,7 +3171,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=200001770&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=d6f19f40-624d-4184-b311-df770a4272e5
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=200001770&amp;roomTypeCode=200000377&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=39c1dd08-fc34-48c8-9d4d-f70696b1b3b7
                 )
 
             [9] => SimpleXMLElement Object
@@ -3227,7 +3227,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => eb47b60f-899d-4468-8600-22aec72e7544
+                                                    [rateKey] => 5752b712-978b-4630-b291-041d94869c62
                                                 )
 
                                         )
@@ -3340,7 +3340,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552250&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=eb47b60f-899d-4468-8600-22aec72e7544
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552250&amp;roomTypeCode=226385&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=5752b712-978b-4630-b291-041d94869c62
                 )
 
             [10] => SimpleXMLElement Object
@@ -3396,7 +3396,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => 2a6f7fcb-5f1e-4f41-909b-ca8683600795
+                                                    [rateKey] => ffceed83-af21-4c32-8957-1928ac6501e1
                                                 )
 
                                         )
@@ -3509,7 +3509,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552300&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=2a6f7fcb-5f1e-4f41-909b-ca8683600795
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=414.00&amp;supplierType=E&amp;rateCode=552300&amp;roomTypeCode=226392&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=ffceed83-af21-4c32-8957-1928ac6501e1
                 )
 
             [11] => SimpleXMLElement Object
@@ -3565,7 +3565,7 @@ SimpleXMLElement Object
                                                 (
                                                     [numberOfAdults] => 2
                                                     [numberOfChildren] => 0
-                                                    [rateKey] => a1a18bdd-2887-4012-9f75-ff02c00c4214
+                                                    [rateKey] => 0bd04506-de7e-4e12-a7e8-2e055cf8a3d8
                                                 )
 
                                         )
@@ -3678,7 +3678,7 @@ SimpleXMLElement Object
 
                         )
 
-                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=474.00&amp;supplierType=E&amp;rateCode=422989&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=a1a18bdd-2887-4012-9f75-ff02c00c4214
+                    [deepLink] => https://www.travelnow.com/templates/428432/hotels/183323/book?lang=en&amp;currency=EUR&amp;standardCheckin=09/01/2015&amp;standardCheckout=09/03/2015&amp;selectedPrice=474.00&amp;supplierType=E&amp;rateCode=422989&amp;roomTypeCode=179672&amp;roomsCount=1&amp;rooms[0].adultsCount=2&amp;rateKey=0bd04506-de7e-4e12-a7e8-2e055cf8a3d8
                 )
 
         )
@@ -3700,227 +3700,6 @@ Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [1] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [2] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [3] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [4] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [5] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [6] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [7] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [8] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [9] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [10] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [11] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [12] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [13] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
                                     [0] => 203523702
                                 )
 
@@ -3931,12 +3710,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 620.0
                                 )
 
                         )
 
-                    [14] => Array
+                    [1] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -3950,12 +3729,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 620.0
                                 )
 
                         )
 
-                    [15] => Array
+                    [2] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -3969,12 +3748,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 700.0
                                 )
 
                         )
 
-                    [16] => Array
+                    [3] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -3988,7 +3767,7 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 820.0
                                 )
 
                         )
@@ -4010,227 +3789,6 @@ Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [1] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [2] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [3] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [4] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [5] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [6] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [7] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [8] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [9] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [10] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [11] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [12] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [roomTypeCode] => SimpleXMLElement Object
-                                (
-                                )
-
-                            [price] => SimpleXMLElement Object
-                                (
-                                    [0] => 289.78
-                                )
-
-                        )
-
-                    [13] => Array
-                        (
-                            [rateCode] => SimpleXMLElement Object
-                                (
                                     [0] => 201180177
                                 )
 
@@ -4246,7 +3804,7 @@ Array
 
                         )
 
-                    [14] => Array
+                    [1] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4265,7 +3823,7 @@ Array
 
                         )
 
-                    [15] => Array
+                    [2] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4284,7 +3842,7 @@ Array
 
                         )
 
-                    [16] => Array
+                    [3] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4298,12 +3856,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 331.82
                                 )
 
                         )
 
-                    [17] => Array
+                    [4] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4317,12 +3875,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 342.0
                                 )
 
                         )
 
-                    [18] => Array
+                    [5] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4336,12 +3894,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 342.0
                                 )
 
                         )
 
-                    [19] => Array
+                    [6] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4355,12 +3913,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 342.0
                                 )
 
                         )
 
-                    [20] => Array
+                    [7] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4374,12 +3932,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 402.0
                                 )
 
                         )
 
-                    [21] => Array
+                    [8] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4393,12 +3951,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 414.0
                                 )
 
                         )
 
-                    [22] => Array
+                    [9] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4412,12 +3970,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 414.0
                                 )
 
                         )
 
-                    [23] => Array
+                    [10] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4431,12 +3989,12 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 414.0
                                 )
 
                         )
 
-                    [24] => Array
+                    [11] => Array
                         (
                             [rateCode] => SimpleXMLElement Object
                                 (
@@ -4450,7 +4008,7 @@ Array
 
                             [price] => SimpleXMLElement Object
                                 (
-                                    [0] => 289.78
+                                    [0] => 474.0
                                 )
 
                         )
