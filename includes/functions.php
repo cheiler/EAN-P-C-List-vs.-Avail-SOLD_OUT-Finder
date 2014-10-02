@@ -132,4 +132,10 @@ function findPrice($needle, $hotel, $roomCode, $rateCode, $haystack){
 }
 
 
+function getDifference($listPrice, $availPrice){
+    return intval($availPrice)-intval($listPrice);
+}
+
+
+
 ?>

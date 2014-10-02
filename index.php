@@ -2,7 +2,7 @@
 /**
  * EAN P:C List vs. Avail SOLD_OUT Finder
  * @author: Christian Heiler
- * @version: 0.2
+ * @version: 0.6
  * 
  * 
 */
@@ -46,7 +46,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
     $xml .= "<numberOfResults>".getValue("results")."</numberOfResults>";
     $xml .= "<maxRatePlanCount>".getValue("max")."</maxRatePlanCount>";
-    $xml .= "<includeDetails>true</includeDetails>";
+    $xml .= "<includeDetails>false</includeDetails>";
     $xml .= "</HotelListRequest>";
 
 
@@ -147,6 +147,7 @@ foreach($listResult as $entry){
 $space = "";
 //screenlog($listResult);
     echo "<table border='1'>";
+    echo "<tr><td>Hotel ID</td><td>roomTypeCode</td><td>rateKey</td><td>Price</td><td>||</td><td>Hotel ID</td><td>roomTypeCode</td><td>rateKey</td><td>Price</td><td>PriceChange</td></tr>";
 foreach($listResult as $list){
     
     foreach($list['rooms'] as $room){
@@ -159,7 +160,9 @@ foreach($listResult as $list){
        echo "<td>".findHotelId($list['hotelId'], $availResult)."</td>";
        echo "<td>".findRoomTypeCode($room['roomTypeCode'], $list['hotelId'], $availResult)."</td>";
        echo "<td>".findRateCode($room['rateCode'], $list['hotelId'], $room['roomTypeCode'], $availResult)."</td>"; 
-       echo "<td>".findPrice($room['rateCode'], $list['hotelId'], $room['roomTypeCode'],$room['rateCode'], $availResult)."</td>";
+       $availPrice=findPrice($room['rateCode'], $list['hotelId'], $room['roomTypeCode'],$room['rateCode'], $availResult);
+       echo "<td>".$availPrice."</td>";
+       echo "<td>".getDifference($room['price'], $availPrice)."</td>";
        
        
        echo "</tr>\r\n"; 
