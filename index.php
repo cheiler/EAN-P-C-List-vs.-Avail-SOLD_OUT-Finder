@@ -44,7 +44,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<departureDate>09/03/2015</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
-    $xml .= "<numberOfResults>2</numberOfResults>";
+    $xml .= "<numberOfResults>3</numberOfResults>";
     $xml .= "<maxRatePlanCount>2</maxRatePlanCount>";
     $xml .= "<includeDetails>true</includeDetails>";
     $xml .= "</HotelListRequest>";
@@ -128,10 +128,10 @@ foreach($listResult as $entry){
     $j=0;
     $rateArray = $availResponse->HotelRoomResponse;
     
-    screenlog($rateArray);
+    //screenlog($rateArray);
     
     foreach($rateArray as $rate){
-        screenlog($rate);
+        //screenlog($rate);
         $availResult[$i]['rooms'][$j]['rateCode'] = $rate->rateCode;
         $availResult[$i]['rooms'][$j]['roomTypeCode'] = $rate->roomTypeCode;
         $availResult[$i]['rooms'][$j]['price'] = $rate->RateInfos->RateInfo->ChargeableRateInfo['total'];
@@ -141,12 +141,33 @@ foreach($listResult as $entry){
     
 }
     fwrite($file, print_r($availResult, true)."\r\n");
-    screenlog($availResult);
+    //screenlog($availResult);
     
     
-//TODO: Calculate Results and Display in Table
+//Calculate Results and Display in Table
 
 
+screenlog($listResult);
+    echo "<table border='1'>";
+foreach($listResult as $list){
+    
+    foreach($list['rooms'] as $room){
+       echo "<tr>";
+       echo "<td>".$list['hotelId']."</td>";
+       echo "<td>".$room['rateCode']."</td>";
+       echo "<td>".$room['roomTypeCode']."</td>"; 
+       echo "<td>".$room['price']."</td>"; 
+       echo "</tr>\r\n"; 
+    }
+    
+}
+echo "</table>";
+    
+    
+    
+    
+    
+    
 ?>   
 </body>
 </html>
