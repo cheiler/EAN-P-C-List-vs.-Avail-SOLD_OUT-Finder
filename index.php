@@ -135,7 +135,7 @@ foreach($listResult as $entry){
         $availResult[$i]['rooms'][$j]['rateCode'] = $rate->rateCode;
         $availResult[$i]['rooms'][$j]['roomTypeCode'] = $rate->roomTypeCode;
         $availResult[$i]['rooms'][$j]['price'] = $room->RateInfos->RateInfo->ChargeableRateInfo['total'];
-        
+        $j++;
     }
     $i++;
     
