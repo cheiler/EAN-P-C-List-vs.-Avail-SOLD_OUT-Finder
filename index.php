@@ -2,7 +2,7 @@
 /**
  * EAN P:C List vs. Avail SOLD_OUT Finder
  * @author: Christian Heiler
- * @version: 0.1
+ * @version: 0.2
  * 
  * 
 */
@@ -128,7 +128,7 @@ foreach($listResult as $entry){
     $j=0;
     $rateArray = $availResponse;
     
-    print_r($rateArray);
+    //screenlog($rateArray);
     
     foreach($rateArray as $rate){
          
@@ -141,7 +141,7 @@ foreach($listResult as $entry){
     
 }
     fwrite($file, print_r($availResult, true)."\r\n");
-    
+    screenlog($availResult);
     
     
 //TODO: Calculate Results and Display in Table

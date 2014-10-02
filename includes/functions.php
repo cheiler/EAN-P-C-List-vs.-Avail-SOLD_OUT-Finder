@@ -67,4 +67,11 @@ function generateSig($apiKey, $secret){
 }
 
 
+function screenlog($variable){
+    echo "\r\n<br /><pre>";
+    echo print_r($variable, true);
+    echo "\r\n<br /></pre>\r\n<br />";
+    
+}
+
 ?>
