@@ -40,8 +40,8 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     
     $xml = "<HotelListRequest>";
     $xml .= "<destinationId>".getValue("destination")."</destinationId>";
-    $xml .= "<arrivalDate>09/01/2015</arrivalDate>";
-    $xml .= "<departureDate>09/03/2015</departureDate>";
+    $xml .= "<arrivalDate>".getValue("arrival")."</arrivalDate>";
+    $xml .= "<departureDate>".getValue("departure")."</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
     $xml .= "<numberOfResults>100</numberOfResults>";
@@ -101,12 +101,10 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     
     $xml = "<HotelRoomAvailabilityRequest>";
     $xml .="<hotelId>[+hotelid+]</hotelId>";
-    $xml .= "<arrivalDate>09/01/2015</arrivalDate>";
-    $xml .= "<departureDate>09/03/2015</departureDate>";
+    $xml .= "<arrivalDate>".getValue("arrival")."</arrivalDate>";
+    $xml .= "<departureDate>".getValue("departure")."</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
-    $xml .= "<numberOfResults>10</numberOfResults>";
-    $xml .= "<maxRatePlanCount>2</maxRatePlanCount>";
     $xml .= "</HotelRoomAvailabilityRequest>";
     
 
