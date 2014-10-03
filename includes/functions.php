@@ -89,11 +89,14 @@ function findRoomTypeCode($needle, $hotel, $haystack){
     $back = "SOLD_OUT";
     foreach($haystack as $straw){
         if(intval($straw['hotelId']) == intval($hotel)){
-            foreach($straw['rooms'] as $room){
-                if(intval($room['roomTypeCode']) == intval($needle)){
-                    $back = $room['roomTypeCode'];
+            if (isset($straw['rooms'])){
+                foreach($straw['rooms'] as $room){
+                    if(intval($room['roomTypeCode']) == intval($needle)){
+                        $back = $room['roomTypeCode'];
+                    }
                 }
             }
+            
         }
     }
     return $back; 
@@ -103,10 +106,12 @@ function findRateCode($needle, $hotel, $roomCode, $haystack){
     $back = "SOLD_OUT";
     foreach($haystack as $straw){
         if(intval($straw['hotelId']) == intval($hotel)){
-            foreach($straw['rooms'] as $room){
-                if(intval($room['roomTypeCode']) == intval($roomCode)){
-                    if(intval($room['rateCode']) == intval($needle)){
-                        $back = $room['rateCode'];
+            if (isset($straw['rooms'])){
+                foreach($straw['rooms'] as $room){
+                    if(intval($room['roomTypeCode']) == intval($roomCode)){
+                        if(intval($room['rateCode']) == intval($needle)){
+                            $back = $room['rateCode'];
+                        }
                     }
                 }
             }
@@ -119,10 +124,12 @@ function findPrice($needle, $hotel, $roomCode, $rateCode, $haystack){
     $back = "SOLD_OUT";
     foreach($haystack as $straw){
         if(intval($straw['hotelId']) == intval($hotel)){
-            foreach($straw['rooms'] as $room){
-                if(intval($room['roomTypeCode']) == intval($roomCode)){
-                    if(intval($room['rateCode']) == intval($rateCode)){
-                           $back = $room['price']; 
+            if (isset($straw['rooms'])){
+                foreach($straw['rooms'] as $room){
+                    if(intval($room['roomTypeCode']) == intval($roomCode)){
+                        if(intval($room['rateCode']) == intval($rateCode)){
+                               $back = $room['price']; 
+                        }
                     }
                 }
             }
