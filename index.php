@@ -54,6 +54,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     $xml .= "<numberOfResults>".getValue("results")."</numberOfResults>";
     $xml .= "<maxRatePlanCount>".getValue("max")."</maxRatePlanCount>";
     //$xml .= "<includeDetails>true</includeDetails>";
+    $xml .= "<rateType>MerchantStandard</rateType>";
     $xml .= "</HotelListRequest>";
 
 
@@ -114,6 +115,7 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
     //$xml .= "<departureDate>10/07/2014</departureDate>";
     $xml .= "<RoomGroup>";
     $xml .= "<Room><numberOfAdults>2</numberOfAdults></Room></RoomGroup>";
+    $xml .= "<rateType>MerchantStandard</rateType>";
     $xml .= "</HotelRoomAvailabilityRequest>";
     
 
