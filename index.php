@@ -39,7 +39,14 @@ fwrite ($file, "LOGFILE LIST vs. AVAIL \r\nTime: ".date("Y-m-d-H-i-s")."\r\n");
 //Create LIST Request XML:
     
     $xml = "<HotelListRequest>";
-    $xml .= "<destinationId>".getValue("destination")."</destinationId>";
+    if (getValue("destination") !=""){
+        $xml .= "<destinationId>".getValue("destination")."</destinationId>";
+    } elseif(getValue("hotelids") !=""){
+        
+        $xml .= "<hotelIdList>".getValue("hotelids")."</hotelIdList>";
+    }
+    
+    
     $xml .= "<arrivalDate>".getValue("arrival")."</arrivalDate>";
     $xml .= "<departureDate>".getValue("departure")."</departureDate>";
     $xml .= "<RoomGroup>";
